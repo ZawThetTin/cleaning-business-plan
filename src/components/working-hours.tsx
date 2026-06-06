@@ -1,23 +1,15 @@
 import Accent from '@/components/shared/accent';
-import { CalculatedValues } from '@/types/calculatedValues';
-import { Inputs } from '@/types/input';
+import { data } from '@/data';
 
-interface Props {
-	inputs: Inputs;
-	calculatedValues: CalculatedValues;
-}
-
-export default function WorkingHours({ inputs, calculatedValues }: Props) {
+export default function WorkingHours() {
 	const {
 		numberOfWorkingDaysInMonth,
 		cleaningSitesPerEmployeePerWorkingDay,
 		maxCleaningSitesPerEmployeePerWorkingDay,
 		typicalWorkDayHours,
-	} = inputs;
-	const {
 		requiredMonthlyRecurringCustomersPerEmployee,
 		maxMonthlyRecurringCustomersPerEmployee,
-	} = calculatedValues;
+	} = data;
 
 	return (
 		<div>

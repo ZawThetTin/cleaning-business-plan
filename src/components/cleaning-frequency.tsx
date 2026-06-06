@@ -1,12 +1,8 @@
 import Accent from '@/components/shared/accent';
-import { CalculatedValues } from '@/types/calculatedValues';
+import { data } from '@/data';
 
-interface Props {
-	calculatedValues: CalculatedValues;
-}
-
-export default function CleaningFrequency({ calculatedValues }: Props) {
-	const { targetedTwiceAMonthRecurringCustomersPerEmployee } = calculatedValues;
+export default function CleaningFrequency() {
+	const { targetedTwiceAMonthRecurringCustomersPerEmployee } = data;
 
 	return (
 		<div>

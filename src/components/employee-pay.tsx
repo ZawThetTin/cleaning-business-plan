@@ -1,24 +1,16 @@
 import Accent from '@/components/shared/accent';
-import { CalculatedValues } from '@/types/calculatedValues';
-import { Inputs } from '@/types/input';
+import { data } from '@/data';
 import { toCurrency } from '@/utils/toCurrency';
 
-interface Props {
-	inputs: Inputs;
-	calculatedValues: CalculatedValues;
-}
-
-export default function EmployeePay({ inputs, calculatedValues }: Props) {
+export default function EmployeePay() {
 	const {
 		appropriateHourlyRateForEmployment,
 		typicalWorkDayHours,
 		minimalHourlyRateForEmployment,
-	} = inputs;
-	const {
 		employeePayPerVisit,
 		remainingAmountAfterPayingEmployee,
 		remainingAmountAfterTax,
-	} = calculatedValues;
+	} = data;
 
 	return (
 		<div>

@@ -1,6 +1,7 @@
 export type Inputs = {
 	numberOfWorkingDaysInMonth: number;
 	cleaningSitesPerEmployeePerWorkingDay: number;
+	estimatedTimePerCleaningSiteInHours: number;
 	maxCleaningSitesPerEmployeePerWorkingDay: number;
 	typicalWorkDayHours: number;
 	hourlyChargeToClients: number;

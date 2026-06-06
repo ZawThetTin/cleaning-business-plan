@@ -1,4 +1,6 @@
 export type CalculatedValues = {
+	dailyWorkingHoursPerEmployee: number;
+	monthlyBillableHoursPerEmployee: number;
 	requiredMonthlyRecurringCustomersPerEmployee: number;
 	maxMonthlyRecurringCustomersPerEmployee: number;
 	targetedTwiceAMonthRecurringCustomersPerEmployee: number;
